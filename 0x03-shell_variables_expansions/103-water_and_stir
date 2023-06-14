@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=bestchol" | tr '[:lower:]' '012345' | bc <<< "$(echo $WATER | tr '[:lower:]' '012345') + $(echo $STIR | tr 'stir.' '01234')"
+echo $(($(echo $WATER | tr -d '[:alpha:]' | tr '[:lower:]' '01234') + $(echo $STIR | tr -d '[:alpha:].' | tr '[:lower:]' '01234'))) | tr '01234567' 'behlnort'
