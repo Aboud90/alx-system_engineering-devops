@@ -7,7 +7,7 @@ subreddit.
 import requests
 
 def number_of_subscribers(subreddit):
-    url = f'https://api.reddit.com/r/{subreddit}'
+    url = 'https://api.reddit.com/r/{subreddit}'
     headers = {
         'User-Agent': 'My User Agent 1.0'
     }
